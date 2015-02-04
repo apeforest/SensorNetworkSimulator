@@ -1,0 +1,59 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Main - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "F:\DOCUME~1\G-Force\LOCALS~1\Temp\RSP93.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/Main.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\Documents and Settings\G-Force\My Documents\HTML\Giac\research\maximalexposure\GVExposureGrid2D.cpp"
+"F:\Documents and Settings\G-Force\My Documents\HTML\Giac\research\maximalexposure\GVExposureGridAttributes.cpp"
+"F:\Documents and Settings\G-Force\My Documents\HTML\Giac\research\maximalexposure\GVExposureSensorNetwork2D.cpp"
+"F:\Documents and Settings\G-Force\My Documents\HTML\Giac\research\maximalexposure\GVGrid2D.cpp"
+"F:\Documents and Settings\G-Force\My Documents\HTML\Giac\research\maximalexposure\GVGridPoint2D.cpp"
+"F:\Documents and Settings\G-Force\My Documents\HTML\Giac\research\maximalexposure\GVPoint2D.cpp"
+"F:\Documents and Settings\G-Force\My Documents\HTML\Giac\research\maximalexposure\GVSensor2D.cpp"
+"F:\Documents and Settings\G-Force\My Documents\HTML\Giac\research\maximalexposure\GVSensorNetwork2D.cpp"
+"F:\Documents and Settings\G-Force\My Documents\HTML\Giac\research\maximalexposure\GVUtil.cpp"
+"F:\Documents and Settings\G-Force\My Documents\HTML\Giac\research\maximalexposure\Main.cpp"
+]
+Creating command line "cl.exe @"F:\DOCUME~1\G-Force\LOCALS~1\Temp\RSP93.tmp"" 
+Creating temporary file "F:\DOCUME~1\G-Force\LOCALS~1\Temp\RSP94.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib glui32.lib glut32.lib glu32.lib opengl32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/Main.pdb" /machine:I386 /nodefaultlib:"LIBCD" /out:"Release/Main.exe" 
+".\Release\GVExposureGrid2D.obj"
+".\Release\GVExposureGridAttributes.obj"
+".\Release\GVExposureSensorNetwork2D.obj"
+".\Release\GVGrid2D.obj"
+".\Release\GVGridPoint2D.obj"
+".\Release\GVPoint2D.obj"
+".\Release\GVSensor2D.obj"
+".\Release\GVSensorNetwork2D.obj"
+".\Release\GVUtil.obj"
+".\Release\Main.obj"
+]
+Creating command line "link.exe @"F:\DOCUME~1\G-Force\LOCALS~1\Temp\RSP94.tmp""
+<h3>Output Window</h3>
+Compiling...
+GVExposureGrid2D.cpp
+GVExposureGridAttributes.cpp
+GVExposureSensorNetwork2D.cpp
+GVGrid2D.cpp
+GVGridPoint2D.cpp
+GVPoint2D.cpp
+GVSensor2D.cpp
+GVSensorNetwork2D.cpp
+GVUtil.cpp
+Main.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Main.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

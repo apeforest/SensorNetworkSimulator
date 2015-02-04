@@ -1,0 +1,259 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Exposure.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Exposure.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Exposure"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Exposure Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2000",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_EXPOSURE_DIALOG DIALOGEX 0, 0, 490, 279
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Exposure"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_N,82,7,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GridSize,82,26,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GridAccuracy,130,26,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_u,82,45,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_P,82,64,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SX,82,83,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SY,130,83,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EX,82,102,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EY,130,102,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_InputFile,81,121,88,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_OutFile,81,140,88,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "Random",IDC_Rand,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,15,170,43,10
+    CONTROL         "Triangle",IDC_Triangle,"Button",BS_AUTORADIOBUTTON,15,
+                    181,41,10
+    CONTROL         "Rectangle",IDC_Rectangle,"Button",BS_AUTORADIOBUTTON,64,
+                    170,49,10
+    CONTROL         "Hexagon",IDC_Hexagon,"Button",BS_AUTORADIOBUTTON,64,181,
+                    45,10
+    LTEXT           "Length of Side:",IDC_STATIC,117,170,49,8
+    EDITTEXT        IDC_Length,117,180,49,12,ES_AUTOHSCROLL
+    GROUPBOX        "Sensor Generation Mode",IDC_STATIC,7,160,163,35,
+                    WS_GROUP
+    CONTROL         "Reference Grid",IDC_Grid,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,196,64,10
+    CONTROL         "Refinement Zone",IDC_RefZone,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,100,196,71,10
+    CONTROL         "Path Vertices",IDC_PathV,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,207,58,10
+    CONTROL         "Show Voronoi",IDC_ShowVoronoi,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,100,207,60,10
+    PUSHBUTTON      "&Generate",IDC_Generate,7,233,36,14
+    PUSHBUTTON      "&Refine",IDC_Refine,49,233,36,14
+    PUSHBUTTON      "Re&fresh",IDC_Refresh,91,233,36,14
+    DEFPUSHBUTTON   "E&xit",IDOK,133,233,36,14
+    PUSHBUTTON      "&Input",IDC_Input,91,250,36,14
+    PUSHBUTTON      "&Output",IDC_Output,133,250,36,14,WS_DISABLED
+    LTEXT           "Status:",IDC_Status,7,256,84,8
+    CONTROL         "Progress1",IDC_Progress,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,7,266,166,6
+    CONTROL         "",IDC_Graph,"Static",SS_BLACKRECT,179,7,304,265
+    LTEXT           "Number of Sensors:",IDC_STATIC,7,13,63,8
+    LTEXT           "Grid Size:",IDC_STATIC,7,32,31,8
+    LTEXT           "u:",IDC_STATIC,7,51,8,8
+    LTEXT           "P:",IDC_STATIC,7,70,8,8
+    LTEXT           "Starting Coordinates:",IDC_STATIC,7,89,66,8
+    LTEXT           "Ending Coordinates:",IDC_STATIC,7,108,64,8
+    LTEXT           "Input File:",IDC_STATIC,7,127,32,8
+    LTEXT           "Output File:",IDC_STATIC,7,146,37,8
+    LTEXT           "Cost:",IDC_STATIC,7,220,17,8
+    LTEXT           "Static",IDC_PathCost,28,217,49,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "Length:",IDC_STATIC,87,220,25,8
+    LTEXT           "Static",IDC_PLen,117,217,49,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Exposure MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Exposure\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Exposure.EXE\0"
+            VALUE "ProductName", "Exposure Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_EXPOSURE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 483
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 272
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Exposure..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Exposure.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

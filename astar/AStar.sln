@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AStar", "AStar.vcproj", "{F49E4C81-9E4E-42C2-BA95-9C8B79600B3E}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F49E4C81-9E4E-42C2-BA95-9C8B79600B3E}.Debug.ActiveCfg = Debug|Win32
+		{F49E4C81-9E4E-42C2-BA95-9C8B79600B3E}.Debug.Build.0 = Debug|Win32
+		{F49E4C81-9E4E-42C2-BA95-9C8B79600B3E}.Release.ActiveCfg = Release|Win32
+		{F49E4C81-9E4E-42C2-BA95-9C8B79600B3E}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

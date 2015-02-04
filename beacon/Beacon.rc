@@ -1,0 +1,244 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Beacon.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Beacon"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Beacon Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2000",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_BEACON_DIALOG DIALOGEX 0, 0, 468, 276
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Beacon"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_Num,113,14,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_Ran,113,32,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_Per,113,50,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_InFile,53,68,100,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_OutFile,53,86,100,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Input",IDC_Input,12,107,42,14
+    PUSHBUTTON      "&Refresh",IDC_Refresh,61,107,42,14
+    PUSHBUTTON      "&Calculate",IDC_Calc,110,107,42,14
+    EDITTEXT        IDC_NumL,93,138,28,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_NumH,125,138,28,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_RanL,93,162,28,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_RanH,125,162,28,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_PerL,93,186,28,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_PerH,125,186,28,14,ES_RIGHT | ES_AUTOHSCROLL
+    PUSHBUTTON      "&Random",IDC_Rand,12,210,40,14
+    EDITTEXT        IDC_Trials,59,209,20,14,ES_RIGHT | ES_AUTOHSCROLL
+    PUSHBUTTON      "&Step Wise",IDC_Step,86,210,40,14
+    EDITTEXT        IDC_NumSteps,133,210,20,14,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "Number",IDC_chkNS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    12,225,41,10
+    CONTROL         "Range",IDC_chkRS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    62,225,37,10
+    CONTROL         "Percent",IDC_chkPS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,112,225,41,10
+    CONTROL         "Final Percent Beacons",IDC_chkFP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,236,87,10
+    CONTROL         "Maple V",IDC_chkMaple,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,112,236,41,10
+    DEFPUSHBUTTON   "E&xit",IDOK,12,255,50,14
+    GROUPBOX        "Sensor Data",IDC_STATIC,7,7,149,119
+    GROUPBOX        "Random Data",IDC_STATIC,7,130,149,119
+    LTEXT           "Number of Sensors:",IDC_STATIC,13,20,63,8
+    LTEXT           "Range of Sensors:",IDC_STATIC,13,38,60,8
+    LTEXT           "Percent Beacons:",IDC_STATIC,13,56,58,8
+    LTEXT           "Output File:",IDC_STATIC,13,92,37,8
+    LTEXT           "Number of Sensors:",IDC_STATIC,13,144,63,8
+    LTEXT           "Range of Sensors:",IDC_STATIC,13,168,60,8
+    LTEXT           "Percent Beacons:",IDC_STATIC,13,192,58,8
+    CONTROL         "Progress1",IDC_Progress,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,65,262,91,7
+    LTEXT           "Waiting...",IDC_Status,65,251,91,8
+    CONTROL         "",IDC_Picture,"Static",SS_BLACKRECT,163,7,298,262
+    LTEXT           "Input File:",IDC_STATIC,13,74,32,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Beacon MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Beacon\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Beacon.EXE\0"
+            VALUE "ProductName", "Beacon Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_BEACON_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 461
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 269
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Beacon..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

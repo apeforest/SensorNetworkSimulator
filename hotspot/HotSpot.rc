@@ -1,0 +1,245 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\HotSpot.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\HotSpot.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About HotSpot"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "HotSpot Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2002",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_HOTSPOT_DIALOG DIALOGEX 0, 0, 342, 241
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "HotSpot"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NumSensors,320,5,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Radius,320,25,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Sleep,320,45,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Border,320,65,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BkgR,270,125,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BkgG,295,125,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BkgB,320,125,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LowR,270,145,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LowG,295,145,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LowB,320,145,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MedR,270,165,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MedG,295,165,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MedB,320,165,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HighR,270,185,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HighG,295,185,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HighB,320,185,20,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&New",IDC_New,5,200,45,14
+    PUSHBUTTON      "&Refresh",IDC_Refresh,55,200,45,14
+    DEFPUSHBUTTON   "E&xit",IDOK,105,200,45,14
+    CONTROL         "",IDC_Picture,"Static",SS_BLACKRECT,5,5,205,190
+    RTEXT           "Border:",IDC_STATIC,220,71,95,8
+    RTEXT           "Background:",IDC_STATIC,220,129,45,8
+    RTEXT           "Low:",IDC_STATIC,220,151,45,8
+    RTEXT           "Medium:",IDC_STATIC,220,169,45,8
+    RTEXT           "High:",IDC_STATIC,220,191,45,8
+    RTEXT           "Proportion Sleeping:",IDC_STATIC,220,50,95,8
+    RTEXT           "Communication Radius:",IDC_STATIC,220,31,95,8
+    RTEXT           "Number Of Sensors:",IDC_STATIC,220,10,95,8
+    EDITTEXT        IDC_SleepR,270,225,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SleepG,295,225,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SleepB,320,225,20,14,ES_AUTOHSCROLL
+    RTEXT           "Sleep:",IDC_STATIC,220,231,45,8
+    EDITTEXT        IDC_EdgeR,270,205,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EdgeG,295,205,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EdgeB,320,205,20,14,ES_AUTOHSCROLL
+    RTEXT           "Edges:",IDC_STATIC,220,211,45,8
+    EDITTEXT        IDC_SensorSize,320,85,20,14,ES_AUTOHSCROLL
+    RTEXT           "Sensor Size:",IDC_STATIC,220,91,95,8
+    CONTROL         "GradientEdges",IDC_GradientEdges,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,65,220,8,8
+    RTEXT           "Gradient Edges:",IDC_STATIC,5,220,55,8
+    EDITTEXT        IDC_EdgeBright,320,105,20,14,ES_AUTOHSCROLL
+    RTEXT           "Edge Brightness:",IDC_STATIC,220,111,95,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "HotSpot MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "HotSpot\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "HotSpot.EXE\0"
+            VALUE "ProductName", "HotSpot Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_HOTSPOT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 335
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 234
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About HotSpot..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\HotSpot.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

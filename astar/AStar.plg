@@ -1,0 +1,60 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AStar - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/AStar.res" /d "NDEBUG" /d "_AFXDLL" "F:\Documents and Settings\G-Force\My Documents\HTML\Giac\research\Astar\AStar.rc"" 
+Creating temporary file "F:\DOCUME~1\G-Force\LOCALS~1\Temp\RSPA4.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/AStar.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\Documents and Settings\G-Force\My Documents\HTML\Giac\research\Astar\AStar.cpp"
+"F:\Documents and Settings\G-Force\My Documents\HTML\Giac\research\Astar\AStarDlg.cpp"
+"F:\Documents and Settings\G-Force\My Documents\HTML\Giac\research\Astar\AStarNetwork.cpp"
+"F:\Documents and Settings\G-Force\My Documents\HTML\Giac\research\Astar\Sensor.cpp"
+"F:\Documents and Settings\G-Force\My Documents\HTML\Giac\research\Astar\SensorNetwork.cpp"
+"F:\Documents and Settings\G-Force\My Documents\HTML\Giac\research\Astar\SensorQueue.cpp"
+]
+Creating command line "cl.exe @"F:\DOCUME~1\G-Force\LOCALS~1\Temp\RSPA4.tmp"" 
+Creating temporary file "F:\DOCUME~1\G-Force\LOCALS~1\Temp\RSPA5.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/AStar.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\Documents and Settings\G-Force\My Documents\HTML\Giac\research\Astar\StdAfx.cpp"
+]
+Creating command line "cl.exe @"F:\DOCUME~1\G-Force\LOCALS~1\Temp\RSPA5.tmp"" 
+Creating temporary file "F:\DOCUME~1\G-Force\LOCALS~1\Temp\RSPA6.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/AStar.pdb" /machine:I386 /out:"Release/AStar.exe" 
+".\Release\AStar.obj"
+".\Release\AStarDlg.obj"
+".\Release\AStarNetwork.obj"
+".\Release\Sensor.obj"
+".\Release\SensorNetwork.obj"
+".\Release\SensorQueue.obj"
+".\Release\StdAfx.obj"
+".\Release\AStar.res"
+]
+Creating command line "link.exe @"F:\DOCUME~1\G-Force\LOCALS~1\Temp\RSPA6.tmp""
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AStar.cpp
+AStarDlg.cpp
+AStarNetwork.cpp
+Sensor.cpp
+SensorNetwork.cpp
+SensorQueue.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+AStar.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

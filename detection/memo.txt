@@ -1,0 +1,9 @@
+The range is the same as in Giac¡¯s program. 
+
+To set range,
+change #define MAIN_COMMUNICATIONRADIUS 0.1f in Main.cpp
+To set numSensors
+change #define MAIN_NUMSENSORS in Main.cpp
+
+To set the node position,
+change void GVSensorNetwork2D::New(int NS, double R) in GVSensorNetwork2D.cpp

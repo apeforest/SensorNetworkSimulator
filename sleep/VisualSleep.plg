@@ -1,0 +1,54 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: VisualSleep - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/VisualSleep.res" /d "NDEBUG" /d "_AFXDLL" "F:\Documents and Settings\G-Force\My Documents\HTML\Giac\research\sleep\VisualSleep.rc"" 
+Creating temporary file "F:\DOCUME~1\G-Force\LOCALS~1\Temp\RSP8A.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/VisualSleep.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\Documents and Settings\G-Force\My Documents\HTML\Giac\research\sleep\Sensor.cpp"
+"F:\Documents and Settings\G-Force\My Documents\HTML\Giac\research\sleep\SensorNetwork.cpp"
+"F:\Documents and Settings\G-Force\My Documents\HTML\Giac\research\sleep\VisualSleep.cpp"
+"F:\Documents and Settings\G-Force\My Documents\HTML\Giac\research\sleep\VisualSleepDlg.cpp"
+]
+Creating command line "cl.exe @"F:\DOCUME~1\G-Force\LOCALS~1\Temp\RSP8A.tmp"" 
+Creating temporary file "F:\DOCUME~1\G-Force\LOCALS~1\Temp\RSP8B.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/VisualSleep.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\Documents and Settings\G-Force\My Documents\HTML\Giac\research\sleep\StdAfx.cpp"
+]
+Creating command line "cl.exe @"F:\DOCUME~1\G-Force\LOCALS~1\Temp\RSP8B.tmp"" 
+Creating temporary file "F:\DOCUME~1\G-Force\LOCALS~1\Temp\RSP8C.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/VisualSleep.pdb" /machine:I386 /out:"Release/VisualSleep.exe" 
+".\Release\Sensor.obj"
+".\Release\SensorNetwork.obj"
+".\Release\StdAfx.obj"
+".\Release\VisualSleep.obj"
+".\Release\VisualSleepDlg.obj"
+".\Release\VisualSleep.res"
+]
+Creating command line "link.exe @"F:\DOCUME~1\G-Force\LOCALS~1\Temp\RSP8C.tmp""
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Sensor.cpp
+SensorNetwork.cpp
+VisualSleep.cpp
+VisualSleepDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+VisualSleep.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
